@@ -1,12 +1,10 @@
-
-import {combineReducers} from 'redux'
-
-import authReducer from "./authReducer";
-import siteModal from "./siteModal";
+import { combineReducers } from 'redux';
+import authReducer from './authReducer';
+import siteModal from './siteModal';
 
 const rootReducer = combineReducers({
     auth: authReducer,
-    siteModal: siteModal
-
+    siteModal: siteModal,
 })
-export default rootReducer
+
+export default rootReducer;

@@ -1,15 +1,8 @@
+const initState = {openClose: "closed",content: ""}
 
-const initState = {
-    openClose: 'closed',
-    connect: ''
-}
-
-export default (state=initState, action) => {
-    switch (action.type) {
-        case 'OPEN_MODAL':
-            return action.payload
-        default:
-            return state
+export default(state = initState, action)=>{
+    if(action.type === "OPEN_MODAL"){
+        return action.payload;
     }
-
+    return state
 }

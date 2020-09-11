@@ -1,3 +1,4 @@
+  
 .home-search-box.col.m4{
     background: #ffffff !important;
     border-radius: 4px !important;
@@ -29,3 +30,22 @@
 #submit-btn input{
     color: white;
 }
+
+.search-box-form .input-field{
+    margin-top: 0px;
+}
+
+.search-box-form input{
+    width: 100%;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.search-box-form .form-label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+

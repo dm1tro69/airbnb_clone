@@ -1,3 +1,6 @@
+//This component is just an example for the challenge
+//It is not used by the app. Login is used instead.
+
 import React, {Component} from 'react';
 import './Login.css';
 import {connect} from 'react-redux';
@@ -6,7 +9,7 @@ import openModal from '../../actions/openModal';
 import SignUp from './SignUp';
 import axios from 'axios';
 import regAction from '../../actions/regAction'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 class Login extends Component{
 
@@ -31,26 +34,24 @@ class Login extends Component{
         }
         const resp = await axios.post(url,data);
         const token = resp.data.token;
-                
-
-
         
-        // -- noEmail
-        if(resp.data.msg === "noEmail"){
-            Swal.fire({
-                title: "That email is not registered.",
-                icon: "error",
-              })
+        // -- loggedIn
         // -- badPass
+        // -- noEmail
+
+        if(resp.data.msg === "noEmail"){
+            swal({
+                title: "Please provide an email",
+                icon: "error",
+              })            
         }else if(resp.data.msg === "badPass"){
-            Swal.fire({
+            swal({
                 title: "Invalid email/password",
                 text: "We don't have a match for that user name and password.",
                 icon: "error",
               })
-        // -- loggedIn
         }else if(resp.data.msg === "loggedIn"){
-            Swal.fire({
+            swal({
                 title: "Success!",
                 icon: "success",
               });

@@ -24,14 +24,15 @@ const theStore = applyMiddleware(reduxPromise)(createStore)(persistedReducer)
 const persistor = persistStore(theStore)
 
 ReactDOM.render(
-  <React.StrictMode>
-      <Provider store={theStore}>
-          <PersistGate persistor={persistor}>
-          <App />
-          </PersistGate>
-      </Provider>
+    <React.StrictMode>
+        <Provider store={theStore}>
+            <PersistGate persistor={persistor}>
+                <App />
+            </PersistGate>
+        </Provider>
 
-  </React.StrictMode>,
-  document.getElementById('root')
+    </React.StrictMode>,
+    document.getElementById('root')
 );
+
 

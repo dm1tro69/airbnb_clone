@@ -25,7 +25,7 @@
     border-width: 2px;
     border-style: solid;
     background: rgb(69, 104, 178);
-    border-color: transparent;
+    border-color: transparent;    
     margin-top: 30px;
     margin-bottom: 8px;
 }
@@ -53,7 +53,7 @@
     border-style: solid;
     background: rgb(255, 255, 255);
     border-color: rgb(118, 118, 118);
-}
+}    
 
 
 
@@ -78,7 +78,7 @@
     border-style: solid !important;
     border-color: rgb(235, 235, 235) !important;
     border-radius: 4px !important;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 
 .login-modal .register-form input::-webkit-input-placeholder, .login-modal .login-form input::-webkit-input-placeholder  { /* Chrome/Opera/Safari */
@@ -140,3 +140,4 @@
     border: 1px solid #E4E4E4;
     margin: 25px 0px 15px;
 }
+

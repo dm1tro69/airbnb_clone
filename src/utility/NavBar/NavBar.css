@@ -12,12 +12,11 @@
 .nav ul li{
     color: white;
     cursor: pointer;
-
 }
+
 .nav ul li.login-signup{
-    margin-right: 10px;
+    margin-right: 15px;
 }
-
 
 .nav .nav-non-link{
     padding: 0 15px;
@@ -30,5 +29,6 @@
 
 .nav ul li:hover{
     border-bottom: 2px solid white;
-    background-color: initial;
+    background-color: initial;    
 }
+

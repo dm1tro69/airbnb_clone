@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import './Modal.css'
-import {connect} from 'react-redux'
-import {bindActionCreators} from "redux";
-import openModal from "../../actions/openModal";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import {bindActionCreators} from 'redux';
+import './Modal.css';
+import openModal from '../../actions/openModal';
 
 class Modal extends Component{
 
@@ -10,50 +10,49 @@ class Modal extends Component{
 
     }
 
-    closeModal = () => {
-        this.props.openModal('closed', '')
+    closeModal = ()=>{
+        this.props.openModal('closed','');
     }
 
-    render() {
-        let modalInLineStyle = {
-            display: 'block'
+
+
+    render(){
+        let modalInlineStyle
+        if(this.props.siteModal.openClose === "open"){
+            modalInlineStyle = {display: 'block'};
+        }else{
+            modalInlineStyle = {display: 'none'};
         }
-        if (this.props.siteModal.openClose === 'open'){
-           modalInLineStyle = {
-                display: 'block'
-            }
-        }else {
-            modalInLineStyle = {
-                display: 'none'
-            }
-        }
+        
 
         return(
-            <div className={'site-modal'} style={modalInLineStyle}>
-                <div className={'modal-content'}>
+            <div className="site-modal" style={modalInlineStyle}>
+                <div className="modal-content">
                     <div className="col right">
-                        <span onClick={this.closeModal} className={'close'}>&times;</span>
+                        <span onClick={this.closeModal} className="close">&times;</span>
                     </div>
-                    <div className={''}>
+                    <div className="">
                         {this.props.siteModal.content}
                     </div>
                 </div>
-
             </div>
         )
     }
-
 }
 
-const mapStateToProps = (state) => {
+function mapStateToProps(state){
     return{
-       siteModal: state.siteModal
+        siteModal: state.siteModal
     }
 }
-const mapDispatchToProps = (dispatch) => {
+
+function mapDispatchToProps(dispatcher){
     return bindActionCreators({
-      openModal: openModal
-    }, dispatch)
+        openModal: openModal,
+    },dispatcher)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Modal)
+export default connect(mapStateToProps,mapDispatchToProps)(Modal)
+
+
+

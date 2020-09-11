@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Venue extends Component{
+class City extends Component{
 
     render(){
-
+        // console.log(this.props.city);
         const { id, title, location, pricePerNight, imageUrl, rating } = this.props.venue;
         return(
             <div className="venue col s12">
                 <Link to={`/venue/${id}`}>
                     <div className="image">
-                        <img src={imageUrl} alt={'img'} />
+                        <img src={imageUrl} />
                     </div>
                     <div className="location-stars">
                         <span className="location">{location}</span>
@@ -18,11 +18,12 @@ class Venue extends Component{
                     </div>
                     <div className="title">${title}</div>
                     <div className="price-per-night">${pricePerNight}/night</div>
-
+                    
                 </Link>
             </div>
         )
     }
 }
 
-export default Venue;
+export default City;
+    

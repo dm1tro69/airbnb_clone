@@ -66,47 +66,47 @@ class Home extends Component{
         }
 
         return(<>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="home col s12">
-                            <div className="upper-fold">
-                                <SearchBox />
-                            </div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="home col s12">
+                        <div className="upper-fold">
+                            <SearchBox />
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid lower-fold">
-                    <div className="row">
-                        <div className="col s12">
-                            <Cities cities={this.state.cities} header="Recommended Cities For You" />
-                        </div>
-
-                        <div className="col s12">
-                            <Activities activities={this.state.activities} header="Today in your area" />
-                        </div>
-
-                        <div className="col s12">
-                            <Cities cities={this.state.europeCities.cities} header={this.state.europeCities.header} />
-                        </div>
-
-                        <div className="col s12">
-                            <Venues venues={this.state.recVenues.venues} header={this.state.recVenues.header} />
-                        </div>
-
-
-                        <div className="col s12">
-                            <Cities cities={this.state.asiaCities.cities} header={this.state.asiaCities.header} />
-                        </div>
-
-                        <div className="col s12">
-                            <Cities cities={this.state.exoticCities.cities} header={this.state.exoticCities.header} />
-                        </div>
-
-
-
+            </div>
+            <div className="container-fluid lower-fold">
+                <div className="row">
+                    <div className="col s12">
+                        <Cities cities={this.state.cities} header="Recommended Cities For You" />
                     </div>
+
+                    <div className="col s12">
+                        <Activities activities={this.state.activities} header="Today in your area" />
+                    </div>
+        
+                    <div className="col s12">
+                        <Cities cities={this.state.europeCities.cities} header={this.state.europeCities.header} />
+                    </div>
+
+                    <div className="col s12">
+                        <Venues venues={this.state.recVenues.venues} header={this.state.recVenues.header} />
+                    </div>
+                    
+
+                    <div className="col s12">
+                        <Cities cities={this.state.asiaCities.cities} header={this.state.asiaCities.header} />
+                    </div>
+
+                    <div className="col s12">
+                        <Cities cities={this.state.exoticCities.cities} header={this.state.exoticCities.header} />
+                    </div>
+
+
+
                 </div>
-            </>
+            </div>
+        </>
         )
     }
 }
