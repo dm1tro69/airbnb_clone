@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class City extends Component{
 
     render(){
-        // console.log(this.props.city);
+
         const { id, title, location, pricePerNight, imageUrl, rating } = this.props.venue;
         return(
             <div className="venue col s12">

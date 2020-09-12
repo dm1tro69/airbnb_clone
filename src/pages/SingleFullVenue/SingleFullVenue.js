@@ -8,6 +8,7 @@ import { bindActionCreators } from 'redux';
 import Login from '../Login/Login'
 import moment from 'moment';
 import swal from 'sweetalert';
+import loadScript from "../../utilityFunction/loadScript";
 
 class SingleFullVenue extends Component{
 
@@ -38,7 +39,7 @@ class SingleFullVenue extends Component{
     changeCheckIn = (e)=>{this.setState({checkIn: e.target.value})}
     changeCheckOut = (e)=>{this.setState({checkOut: e.target.value})}
 
-    reserveNow = (e)=>{
+    reserveNow = async (e)=>{
         const startDayMoment = moment(this.state.checkIn)
         const endDayMoment = moment(this.state.checkOut)
         const diffDays = endDayMoment.diff(startDayMoment,"days");
@@ -58,14 +59,45 @@ class SingleFullVenue extends Component{
             // diff days is a valid number!
             const pricePerNight = this.state.singleVenue.pricePerNight;
             const totalPrice = pricePerNight * diffDays;
+            const scriptUrl = 'https://js.stripe.com/v3'
+            const stripePublicKey = 'pk_test_5198HtPL5CfCPYJ3X8TTrO06ChWxotTw6Sm2el4WkYdrfN5Rh7vEuVguXyPrTezvm3ntblRX8TpjAHeMQfHkEpTA600waD2fMrT';
+            // await new Promise((resolve, reject)=> {
+            //      const script = document.createElement('script')
+            //     script.type = 'text/javascript'
+            //     script.src = scriptUrl
+            //     script.onload = ()=> {
+            //          resolve()
+            //     }
+            //     document.getElementsByTagName('head')[0].appendChild(script)
+            // })
+            await loadScript(scriptUrl)
+            const stripe = window.Stripe(stripePublicKey)
+            const stripeSessionUrl = `${window.apiHost}/payment/create-session`
+            const data = {
+                venueData: this.state.singleVenue,
+                totalPrice,
+                diffDays,
+                pricePerNight,
+                checkIn: this.state.checkIn,
+                checkOut: this.state.checkOut,
+                token: this.props.auth,
+                currency: 'USD'
+            }
+            const sessionVar = await axios.post(stripeSessionUrl, data)
+            console.log(sessionVar.data)
+            stripe.redirectToCheckout({
+                sessionId: sessionVar.data.id
+            }).then((result)=> {
+                console.log(result)
+            })
             
         }
     }
 
     render(){
-        console.log(this.props.auth);
 
-        console.log(this.state.singleVenue);
+
+
         const sv = this.state.singleVenue;
         return(
             <div className="row single-venue">

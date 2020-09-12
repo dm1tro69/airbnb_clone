@@ -2,48 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="463e7e90-9da7-401a-a6fc-17f93d5a4e74" name="Default Changelist" comment="add Auth Redux">
-      <change afterPath="$PROJECT_DIR$/src/pages/CityVenues/CityVenues.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/CityVenues/CityVenues.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login/LoginCompleted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/logout/Logout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/logout/Logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Account/Account.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Account/Account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Account/AccountSideBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Account/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Account/Bookings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/PaymentSuccess/PaymentSuccess.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/PaymentSuccess/PaymentSuccess.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilityFunction/loadScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/logoutAction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/openModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/openModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/regAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/regAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/SearchBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/SearchBox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/SearchBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleFullVenue/Point.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleFullVenue/Point.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleFullVenue/SingleFullVenue.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleFullVenue/SingleFullVenue.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/SingleFullVenue/SingleFullVenue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleFullVenue/SingleFullVenue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/siteModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/siteModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Activity/Activities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Activity/Activities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Activity/Activity.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Activity/Activity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Activity/Activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Activity/Activity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/City/Cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/City/Cities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/City/City.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/City/City.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/City/City.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/City/City.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Modal/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Modal/Modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Modal/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/NavBar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/NavBar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Slider/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Slider/Slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Spinner/Spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Spinner/Spinner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Spinner/Spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Spinner/Spinner.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/Venue/Venue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Venue/Venue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/Venue/Venues.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Venue/Venues.js" afterDir="false" />
     </list>
@@ -121,7 +90,8 @@
       <workItem from="1599577741361" duration="12704000" />
       <workItem from="1599664384346" duration="11168000" />
       <workItem from="1599747534354" duration="7629000" />
-      <workItem from="1599836718255" duration="11791000" />
+      <workItem from="1599836718255" duration="13240000" />
+      <workItem from="1599923153909" duration="10638000" />
     </task>
     <task id="LOCAL-00001" summary="add Home Page">
       <created>1599401833557</created>
