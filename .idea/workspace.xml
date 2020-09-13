@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="463e7e90-9da7-401a-a6fc-17f93d5a4e74" name="Default Changelist" comment="add Auth Redux">
-      <change afterPath="$PROJECT_DIR$/src/pages/Account/Account.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Account/Account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Account/AccountSideBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Account/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Account/Bookings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/PaymentSuccess/PaymentSuccess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/PaymentSuccess/PaymentSuccess.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilityFunction/loadScript.js" afterDir="false" />
+    <list default="true" id="463e7e90-9da7-401a-a6fc-17f93d5a4e74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Account/ChangePassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleFullVenue/SingleFullVenue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleFullVenue/SingleFullVenue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Venue/Venue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Venue/Venue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Venue/Venues.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Venue/Venues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Account/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Account/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Account/AccountSideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Account/AccountSideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Account/Bookings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Account/Bookings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/SearchBox.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +88,8 @@
       <workItem from="1599664384346" duration="11168000" />
       <workItem from="1599747534354" duration="7629000" />
       <workItem from="1599836718255" duration="13240000" />
-      <workItem from="1599923153909" duration="10638000" />
+      <workItem from="1599923153909" duration="11299000" />
+      <workItem from="1599980103076" duration="10635000" />
     </task>
     <task id="LOCAL-00001" summary="add Home Page">
       <created>1599401833557</created>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599836932387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add Stripe">
+      <created>1599939071655</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599939071655</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +159,7 @@
     <MESSAGE value="add Modal" />
     <MESSAGE value="add Auth Redux" />
     <MESSAGE value="add Sign up Log out" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Sign up Log out" />
+    <MESSAGE value="add Stripe" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Stripe" />
   </component>
 </project>
